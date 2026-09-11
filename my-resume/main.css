@@ -1,0 +1,164 @@
+:root{
+    --couleur-primaire:rgb(9, 137, 146);
+    --couleur-secondaire:#b0f0ea;
+}
+
+.photo-id{
+    min-width: 120px;
+}
+
+body{
+    margin: 0;
+    background-repeat: no-repeat;
+    background-color: var(--couleur-secondaire);
+    background-position-x: right;
+}
+
+/* HEADER => nom prémnom => photo d'identité => poste visé */
+
+header{
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    height: auto;
+    z-index: 100;
+    background-color: var(--couleur-primaire);
+    box-shadow: 1px 1px 10px black;
+}
+.id{
+    width: 100%;
+    padding-left: 0.2em;
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    margin-right: 0.2em;
+    color:beige;
+    font-size: xx-large;
+}
+.job{
+    color: rgb(65, 64, 64);
+    font-size: large;
+    text-align: center;
+    padding-left: 0.2em;
+}
+.photo-id{
+    width: 40%;
+    max-width: 160px;
+    border-bottom-left-radius: 1em;
+}
+
+/* MENU =>liens vers les sections */
+
+.menu { 
+    width: 100%;
+}
+.crumbs{
+    margin: 0;
+    padding: 0.5em;
+    background-color: rgb(65, 64, 64);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.crumbs a{
+    color: rgba(255, 255, 255, 0.438);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.crumbs a:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+/* DESCRIPTION RECHERCHE => accroche => détails motivation */
+
+small.recherche{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.stage-cda{
+    padding: 0.5em;
+    margin: 0 0.8em;
+    border-radius: 8px 8px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.322);
+    /* text-align: center; */
+    justify-content: center;
+}
+details{
+    transition:  1s;
+}
+details:open{
+    transition:  1s;
+}
+
+/* CONTENU GENERAL */
+
+main{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.rubrique{
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    background: linear-gradient(white, grey, grey, beige, grey);
+    box-shadow: 0px 2px 10px white;
+}
+.rubrique h4, h5{
+    display: inline-flex;
+    margin: 0;
+}
+.cv{
+    margin-left: 2em;
+}
+.separateur{
+    padding: 0 3px;
+}
+.start{
+    margin-left: 1em;
+}
+
+/* FOOTER => formulaire de contact => lien linkedin */
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    padding: 0 0 1em 0.5em;
+
+    max-width: 450px;
+}
+input, #msg{
+    width: 80%;
+    padding: 0.2em;
+    margin-top: 2px;
+    background-color: beige;
+    box-shadow: inset 1px 1px 8px;
+    border: none;
+    border-radius: 0 0 10px 0;
+}
+#msg{
+    aspect-ratio: 6/4;
+}
+.contact{
+    background-color: gray;
+}
+#send{
+    margin: auto;
+    background-color: var(--couleur-primaire);
+    color: beige;
+    padding: 0.2em 1em;
+    border-radius: 5px;
+}
+
+#linkedin{
+    color: white;
+    text-align: center;
+    background-color: #0077B5;
+}
